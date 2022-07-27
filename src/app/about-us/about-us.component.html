@@ -1,0 +1,30 @@
+<section id="aboutUs" class="howWeWork">
+    <h1>How we <span class="highlight">work</span></h1>
+    <h2>Case studies</h2>
+    <div class="caseStudies">
+        <iframe class="video" type="text/html" src="http://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com"></iframe>
+
+    </div>
+
+</section>
+
+<section class="LicenceBrand">
+    <h2>let us licence your brand.</h2>
+    <h2>My chocolate shop also <span class="highlight">Look to partner with brands to create.</span></h2>
+    <div class="photos">
+        <div *ngFor="let p of photos;" class="photo" >
+            <img [src]="'assets/'+p" alt="">
+        </div>
+     </div>
+</section>
+
+<section class="campaigns">
+    <h2>A selection of our <span class="highlight">Campaigns</span></h2>
+    <div class="photos">
+        <div *ngFor="let p of photos2;let i=index" class="photo"  [style]="{'background-image':'url(assets/'+p.url+')'}"   (mouseenter)="disp(i)" (mouseleave)="disp(i)">
+            <div class="name" *ngIf="dip[i]">
+                <h2>{{p.name}}</h2>
+            </div>
+        </div>
+     </div>
+</section>

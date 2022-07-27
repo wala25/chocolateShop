@@ -20,12 +20,12 @@
   h2{
     position: relative;
     top: -17px;
-    font-size: 20px;
     text-transform: uppercase;
     background: black;
     width: max-content;
     margin:0px auto; 
     padding:0px 10px ;
+    word-wrap: break-word;
 
   }
 }
@@ -62,5 +62,31 @@
             width: 15px;
             margin-right:5px ;
         }
+    }
+}
+.text{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    line-height: 170%;
+    font-weight: 450;
+}
+.highlight{
+    color: rgb(172, 13, 13);
+}
+
+.startBrand{
+    padding: 70px 0px;
+    .photos{
+        width: 80%;
+        margin: auto;
+        justify-content: space-evenly
+    }
+}
+
+
+@media  (max-width:1025px) {
+    .text{
+        width: 70%;
     }
 }

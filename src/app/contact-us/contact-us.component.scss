@@ -1,0 +1,65 @@
+.contactUs{
+    background: black;
+    color: white;
+    padding: 80px 0px;
+}
+.text{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+h2{
+    text-transform: uppercase;
+}
+.highlight{
+    color: rgb(170, 0, 0);
+}
+form{
+    width: max-content;
+    margin: auto;
+    width: 50%;
+}
+input, textarea{
+    background: rgb(105, 105, 105);
+    width: calc(50% - 40px);
+    height: 30px;
+    margin: 10px;
+    padding: 8px;
+    color: white;
+    outline: unset;
+    border: unset;
+    font-size: 16px;
+}
+textarea{
+    width: calc(100% - 45px);
+    height: 150px;
+    font-size: 20px;
+    resize: none;
+}
+input::placeholder, textarea::placeholder{
+    color: rgb(201, 201, 201);
+}
+
+.button{
+    width: max-content;
+    margin: auto;
+}
+
+button{
+    padding: 15px 50px;
+    border: white solid 2px;
+    background: black;
+    border-radius: 30px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width:1025px){
+    form{
+        width:80%;
+    }
+    .text{
+        width: 60%;
+    }
+}

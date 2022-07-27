@@ -1,0 +1,28 @@
+footer{
+    background: rgb(35, 35, 35);
+    padding: 50px 10px;
+}
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    color: white;
+    justify-content: space-around;
+}
+.item{
+    display: flex;
+    align-items: center;
+    margin:20px 15px;
+    margin-left: 0px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+}
+
+.circle{
+    width: 15px;
+    height:15px;
+    border-radius: 50%;
+    background:rgb(182, 13, 13) ;
+    margin-right: 15px;
+}

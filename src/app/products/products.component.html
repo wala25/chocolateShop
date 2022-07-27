@@ -1,4 +1,4 @@
-<section class="products">
+<section id="products" class="products">
     <h1>
         My chocolate shop is a client-first chocolatier that specialises in creating premium,
         <span class="textborder">yet affordable chocolate products.</span>
@@ -31,8 +31,25 @@
             </div>
         </div>
     </div>
-    <h1>Quality</h1>
-    <p>
-        Our ingredients come from the same ethical coca plantations as Hotel chocolat,.... 
-    </p>
+    <div class="text">
+        <h1>Quality</h1>
+        <p>
+           Our ingredients come from the same ethical coca plantations as Hotel chocolat, as well as being palm oil free. This means we can offer recipes of the same quality as industry-leading boutique manufactures.
+        </p>
+    </div>
+</section>
+
+
+<section class="startBrand">
+    <div class="text">
+        <h1>Start Your own <span class="highlight">Brand</span></h1>
+        <p>
+             Start your OWN brand: Let your audience connect with you in a chocolate way! Our range of products enables us to create both seasonal products such as Easter eggs and advent calendars, or something much more personalised to your vision. We can product develop anything in the chocolate pace; we also create protien chocolate bars for some of the largest names in the sport supplements industry.
+        </p>
+    </div>
+     <div class="photos">
+        <div *ngFor="let p of photos2;" class="photo">
+            <img [src]="'assets/'+p" alt="">
+        </div>
+     </div>
 </section>
