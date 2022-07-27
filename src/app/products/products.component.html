@@ -1,0 +1,38 @@
+<section class="products">
+    <h1>
+        My chocolate shop is a client-first chocolatier that specialises in creating premium,
+        <span class="textborder">yet affordable chocolate products.</span>
+    </h1>
+    <h3>For corporates, creators, celebrities, and sports stars.</h3>
+    <div class="examples">
+        <h2>
+            some of the people we've worked with
+        </h2>
+        <div class="photos">
+            <div *ngFor="let p of photos;let i=index;" class="photo" (mouseenter)="disp(i)" (mouseleave)="disp(i)">
+                <img [src]="'assets/'+p" alt="">
+                <div *ngIf="dip[i]" class="hover">
+                    <p>Chloe Ferrari</p>
+                    <div class="SM">
+                        <div>
+                            <img src="assets/inst.png" alt="">
+                            3.7M
+                        </div>
+                        <div>
+                            <img src="assets/inst.png" alt="">
+                            3.7M
+                        </div>
+                        <div>
+                            <img src="assets/inst.png" alt="">
+                            3.7M
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1>Quality</h1>
+    <p>
+        Our ingredients come from the same ethical coca plantations as Hotel chocolat,.... 
+    </p>
+</section>

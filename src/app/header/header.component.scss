@@ -1,0 +1,76 @@
+header{
+    background: rgb(35, 35, 35);
+    height: 22px;
+    padding:5px 30px;
+    color: white;
+}
+.left{
+    position: relative;
+    float: left;
+    display: flex;
+    font-size: x-small;
+    a{
+        margin: 0px 10px;
+    }
+}
+
+header svg{
+    position: relative;
+    top: 5px;
+}
+.right{
+    float: right;
+}
+header img{
+    position: relative;
+    top: 3.5px;
+    width:15px;
+    height:15px;
+    margin-left: 5px;
+
+}
+nav{
+    background: black;
+    color: white;
+    display: flex;
+    height: 60px;
+}
+.logo img{
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+}
+.logo{
+    width: 25%;
+    img{
+        position: relative;
+        top: 10px;
+    }
+}
+.link{
+    width: 25%;
+    text-align: center;
+    margin: auto;
+    a{
+    border: solid white 2px;
+    border-radius: 20px;
+    padding: 8px;
+    font-size: small;
+    }
+}
+.menu{
+    width: 50%;
+    display: flex;
+    align-items:center ;
+    font-size: large;
+
+}
+
+.items{
+    width: max-content;
+    margin: auto;
+}
+.item{
+    width: max-content;
+    margin: auto 10px;
+}
