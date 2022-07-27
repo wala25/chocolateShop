@@ -10,10 +10,10 @@ export class AboutUsComponent implements OnInit {
   constructor() { }
 
   photos=['photo.png','photo.png','photo.png']
-  photos2=[{name:'Chloe Ferry',url:'photo.png'},
-           {name:'Virat Kohli',url:'photo.png'},
-           {name:'Sidemen',url:'photo.png'},
-           {name:'Gemma Collins',url:'photo.png'}]
+  photos2=[{name:'Chloe Ferry',url:'chloe2.jpg'},
+           {name:'Virat Kohli',url:'virat2.jpg'},
+           {name:'Sidemen',url:'sidemen2.jpg'},
+           {name:'Gemma Collins',url:'gemma2.jpg'}]
   dip=new Array(4).fill(false)
   disp(i:number){
     this.dip[i]=!this.dip[i]

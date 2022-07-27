@@ -9,22 +9,22 @@
             some of the people we've worked with
         </h2>
         <div class="photos">
-            <div *ngFor="let p of photos;let i=index;" class="photo" (mouseenter)="disp(i)" (mouseleave)="disp(i)">
-                <img [src]="'assets/'+p" alt="">
+            <div *ngFor="let p of photos;let i=index;" class="photo" [style]="{'background-image':'url(assets/'+p.url+')'}" (mouseenter)="disp(i)" (mouseleave)="disp(i)">
+               
                 <div *ngIf="dip[i]" class="hover">
-                    <p>Chloe Ferrari</p>
+                    <p>{{p.name}}</p>
                     <div class="SM">
-                        <div>
+                        <div *ngIf="p.insta">
                             <img src="assets/inst.png" alt="">
-                            3.7M
+                            {{p.insta}}
                         </div>
-                        <div>
-                            <img src="assets/inst.png" alt="">
-                            3.7M
+                        <div *ngIf="p.tiktok">
+                            <img src="assets/tiktok.png" alt="">
+                            {{p.tiktok}}
                         </div>
-                        <div>
-                            <img src="assets/inst.png" alt="">
-                            3.7M
+                        <div *ngIf="p.youtube">
+                            <img src="assets/youtube.png" alt="">
+                            {{p.youtube}}
                         </div>
                     </div>
                 </div>
@@ -48,8 +48,7 @@
         </p>
     </div>
      <div class="photos">
-        <div *ngFor="let p of photos2;" class="photo">
-            <img [src]="'assets/'+p" alt="">
+        <div *ngFor="let p of photos2;" class="photo" [style]="{'background-image':'url(assets/'+p+')'}">
         </div>
      </div>
 </section>

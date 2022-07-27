@@ -12,8 +12,8 @@
     <h2>let us licence your brand.</h2>
     <h2>My chocolate shop also <span class="highlight">Look to partner with brands to create.</span></h2>
     <div class="photos">
-        <div *ngFor="let p of photos;" class="photo" >
-            <img [src]="'assets/'+p" alt="">
+        <div *ngFor="let p of photos;" class="photo" [style]="{'background-image':'url(assets/'+p+')'}" >
+            
         </div>
      </div>
 </section>

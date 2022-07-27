@@ -1,16 +1,16 @@
-/*
+
 @import url('https://rsms.me/inter/inter.css');
 html { font-family: 'Inter', sans-serif; }
 @supports (font-variation-settings: normal) {
   html { font-family: 'Inter', sans-serif; }
-}*/
+}
 html{
     scroll-behavior: smooth;
 }
 body{
     margin: 0px;
     min-width: 700px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   // font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 a{
     text-decoration: none;
@@ -23,8 +23,9 @@ h2{
     font-size: max(1.8vw , 16px);
 }
 h3{
-    font-size: max(1.5vw , 13px);
+    font-size: max(1.1vw , 15px);
 }
 p{
-    font-size: max(1.4vw , 13px);
+    font-size: max(1vw , 12px);
+    font-weight: 500;
 }

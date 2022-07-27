@@ -31,19 +31,32 @@
 }
 .photos{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
+    justify-content: space-around;
 }
 .photo{
-    width: 25%;
-    padding: 20px 8px;
+    width: 22%;
+    min-width: 200px;
+    height: 350px;
+    margin: 10px;
+  
     img{
         width: 100%;
     }
+    position: relative;
+    background-size: cover; 
+    background-position: center;
+
 }
 .hover{
     position: absolute;
-    bottom: 20px;
+    bottom: 0px;
+    padding-top: 40px;
+    padding-bottom: 5px;
     font-size: small;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.521));
+    width: 100%;
     p{
         padding: 10px 10px;
         width: max-content;
@@ -52,8 +65,10 @@
     }
     .SM{
         display: flex;
+        justify-content: space-around;
         padding: 10px;
         text-align: left;
+        font-size: smaller;
         div{
             margin-left: 8px;
             display: flex;
@@ -61,6 +76,7 @@
         img{
             width: 15px;
             margin-right:5px ;
+            
         }
     }
 }
@@ -80,7 +96,11 @@
     .photos{
         width: 80%;
         margin: auto;
-        justify-content: space-evenly
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+    }
+    .photo{
+        min-width: unset;
     }
 }
 
