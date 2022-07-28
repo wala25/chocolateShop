@@ -15,7 +15,7 @@ export class ProductsComponent implements OnInit {
      {name:'Virat Kohli',url:'virat.png',insta:'193 M', youtube:'16 K'},
      {name:'Sidemen',url:'sidemen.png',insta:'4.1 M',tiktok:'41.9 M', youtube:'14.7M'}
   ]
-  photos2=['photo.png','photo.png','photo.png']
+  photos2=['chloe3.png','virat3.png','sidemen3.png']
   dip=new Array(4).fill(false)
   disp(i:number){
     this.dip[i]=!this.dip[i]

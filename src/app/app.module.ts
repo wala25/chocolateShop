@@ -8,6 +8,8 @@ import { ProductsComponent } from './products/products.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { CasestudiesComponent } from './about-us/casestudies/casestudies.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { AboutUsComponent } from './about-us/about-us.component';
     ProductsComponent,
     FooterComponent,
     ContactUsComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    CasestudiesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,7 @@
+@import'../../assets/styles/colors.scss';
+
 .contactUs{
-    background: black;
+    background: $primary;
     color: white;
     padding: 80px 0px;
 }
@@ -12,7 +14,7 @@ h2{
     text-transform: uppercase;
 }
 .highlight{
-    color: rgb(170, 0, 0);
+    color: $highlight;
 }
 form{
     width: max-content;
@@ -20,7 +22,7 @@ form{
     width: 50%;
 }
 input, textarea{
-    background: rgb(105, 105, 105);
+    background: $inputFields;
     width: calc(50% - 40px);
     height: 30px;
     margin: 10px;
@@ -40,20 +42,27 @@ input::placeholder, textarea::placeholder{
     color: rgb(201, 201, 201);
 }
 
+.notification{
+    color: white;
+    width: max-content;
+    margin: auto;
+    padding: 20px 0px;
+}
 .button{
     width: max-content;
-    margin:20px auto;
+    margin: auto;
 }
 
 button{
     padding: 15px 50px;
     border: white solid 2px;
-    background: black;
+    background: $primary;
     border-radius: 30px;
     font-weight: 600;
     color: white;
     cursor: pointer;
 }
+
 
 @media (max-width:1025px){
     form{

@@ -9,7 +9,7 @@ export class AboutUsComponent implements OnInit {
 
   constructor() { }
 
-  photos=['photo.png','photo.png','photo.png']
+  photos=['choco1.jpg','city.png','choco2.jpg']
   photos2=[{name:'Chloe Ferry',url:'chloe2.jpg'},
            {name:'Virat Kohli',url:'virat2.jpg'},
            {name:'Sidemen',url:'sidemen2.jpg'},

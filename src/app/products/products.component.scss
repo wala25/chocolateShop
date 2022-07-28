@@ -1,18 +1,24 @@
+@import'../../assets/styles/colors.scss';
+
 .products{
-    padding:30px 90px;
+    padding:20px 90px;
+    padding-bottom: 50px;
     margin: auto;
     text-align: center;
-    background: black;
+    background: $primary;
     color: white;
-    h1{
+    h1{ padding-top: 40px;
         text-transform: uppercase 
     }
 }
 .textborder{
     color: black;
-    -webkit-text-stroke: 2px rgb(179, 42, 42);
+    -webkit-text-stroke: 2px $highlight;
 }
-
+h3{
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
 .examples{
   position: relative;
   margin-top:70px ;
@@ -21,7 +27,7 @@
     position: relative;
     top: -17px;
     text-transform: uppercase;
-    background: black;
+    background: $primary;
     width: max-content;
     margin:0px auto; 
     padding:0px 10px ;
@@ -38,12 +44,9 @@
 .photo{
     width: 22%;
     min-width: 200px;
+    max-width: 350px;
     height: 350px;
     margin: 10px;
-  
-    img{
-        width: 100%;
-    }
     position: relative;
     background-size: cover; 
     background-position: center;
@@ -68,7 +71,7 @@
         justify-content: space-around;
         padding: 10px;
         text-align: left;
-        font-size: smaller;
+        font-size: x-small;
         div{
             margin-left: 8px;
             display: flex;
@@ -86,9 +89,10 @@
     margin: auto;
     line-height: 170%;
     font-weight: 450;
+    margin-bottom: 50px;
 }
 .highlight{
-    color: rgb(172, 13, 13);
+    color: $highlight;
 }
 
 .startBrand{
@@ -100,7 +104,7 @@
         flex-wrap: nowrap;
     }
     .photo{
-        min-width: unset;
+        width: 30%;
     }
 }
 
