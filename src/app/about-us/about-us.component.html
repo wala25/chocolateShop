@@ -19,7 +19,7 @@
     <h2>A selection of our <span class="highlight">Campaigns</span></h2>
     <div class="photos">
         <div *ngFor="let p of photos2;let i=index" class="photo"  [style]="{'background-image':'url(assets/'+p.url+')'}"   (mouseenter)="disp(i)" (mouseleave)="disp(i)">
-            <div class="name" *ngIf="dip[i]">
+            <div class="name" [ngClass]="{'hide':!dip[i]}">
                 <h2>{{p.name}}</h2>
             </div>
         </div>

@@ -19,7 +19,6 @@ export class AboutUsComponent implements OnInit {
     this.dip[i]=!this.dip[i]
   }
 
-
   ngOnInit(): void {
   }
 

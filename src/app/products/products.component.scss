@@ -31,6 +31,7 @@ h3{
     margin:0px auto; 
     padding:0px 10px ;
     word-wrap: break-word;
+    width: max-content;
 
   }
 }
@@ -42,9 +43,9 @@ h3{
 }
 .photo{
     width: 22%;
-    min-width: 200px;
+    min-width: 230px;
     max-width: 350px;
-    height: 350px;
+    height: 500px;
     margin: 10px;
     position: relative;
     background-size: cover; 
@@ -96,6 +97,9 @@ h3{
 
 .startBrand{
     padding: 70px 0px;
+    background:url('../../assets/bg1.png') ;
+    background-size: cover; 
+    background-position: center;
     .photos{
         width: 80%;
         margin: auto;
@@ -121,12 +125,16 @@ h3{
         padding:20px;
     }
     .examples{
-        border:unset
+        border:unset;
+        h2{
+            width: unset;
+        }
     }
     .photo{
         width: 100%;
     }
     .startBrand{
+        background:url('../../assets/bgSS.png') ;
         .photos{
             width: 100%;
             margin: auto;
@@ -135,10 +143,13 @@ h3{
         }
         .photo{
             width: 100%;
+            height: 450px;
         }
     }
     .hide{
         display: block;
     }
-    .text{width: 90%};
+    .text{
+        width: 90%
+    };
 }
