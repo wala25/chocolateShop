@@ -24,16 +24,20 @@
             <img src="assets/logo.png" alt="logo">
         </a>
     </div>
-    <div class="menu">
+    <div class="menu" [ngClass]="{'hide':hide}">
         <div class="items">
             <a class="item" href="/#products">Products</a>
             <a class="item" href="#aboutUs">About us</a>
             <a class="item" href="/#contactUs">Contact us</a>
         </div>
+        
     </div>
     <div class="link">
         <a href="#">
             Watch our brand video
         </a>
+        <div class="menuBtn" (click)="dispMenu()">
+            <div></div><div></div><div></div>
+         </div> 
     </div>
 </nav>

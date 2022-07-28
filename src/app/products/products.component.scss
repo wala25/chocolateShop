@@ -25,10 +25,9 @@ h3{
   border-top: solid white 1px;
   h2{
     position: relative;
-    top: -17px;
+    top: -22px;
     text-transform: uppercase;
     background: $primary;
-    width: max-content;
     margin:0px auto; 
     padding:0px 10px ;
     word-wrap: break-word;
@@ -107,10 +106,39 @@ h3{
         width: 30%;
     }
 }
-
+.hide{
+    display: none;
+}
 
 @media  (max-width:1025px) {
     .text{
         width: 70%;
     }
+}
+
+@media  (max-width:700px) {
+    .products{
+        padding:20px;
+    }
+    .examples{
+        border:unset
+    }
+    .photo{
+        width: 100%;
+    }
+    .startBrand{
+        .photos{
+            width: 100%;
+            margin: auto;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .photo{
+            width: 100%;
+        }
+    }
+    .hide{
+        display: block;
+    }
+    .text{width: 90%};
 }

@@ -65,3 +65,22 @@ h2{
         height: 300px;
     }
 }
+
+@media (max-width:700px){
+    
+    .howWeWork{
+        padding: 70px 5%;
+        width: 90%;
+    }
+    .photos{
+        width: 100%;
+        display: block;
+        margin:20px auto;
+    }
+    .photo{
+        width: 100%;
+        max-width: 350px;
+        margin:20px auto;
+        max-width: 350px;
+    }
+}

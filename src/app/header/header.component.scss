@@ -81,3 +81,66 @@ nav{
     width: max-content;
     margin: auto 10px;
 }
+
+
+.menuBtn{
+    display: none;
+    position: relative;
+    top: 5px;cursor: pointer;
+    width: max-content;
+    margin: auto;
+   div{
+      width: 35px;
+      height: 4px;
+      background-color: rgb(255, 255, 255);
+      margin: 6px auto;border-radius: 2px;
+    }
+}
+
+.hide{
+    display: flex;
+}
+
+@media (max-width:900px){
+    header{
+        display:none
+    }
+    nav{
+        border-bottom: solid 1px rgb(83, 83, 83);
+    }
+    .link{
+        width: 100%;
+        margin: auto 50px;
+        position: relative;
+        a{
+            display: none;
+        }
+    .menuBtn{
+        display: block;
+        float: right;
+    }
+    }
+    .menu{
+        position: absolute;
+        top: 61px;
+        width: 100%;
+        background: black;
+        .items{
+            
+            width: 100%;
+        }
+        .item{
+            display: block;
+            margin: 0px;
+            padding: 20px;
+            text-align: left;
+            border-bottom: solid 1px rgb(83, 83, 83);
+            width: calc(100% - 40px);
+        }
+        
+    }
+    .hide{
+        display: none;
+    }
+
+}

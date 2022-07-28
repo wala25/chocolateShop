@@ -9,6 +9,10 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
 
+  hide=true
+  dispMenu(){
+    this.hide=!this.hide
+  }
   ngOnInit(): void {
   }
 

@@ -31,6 +31,7 @@ input, textarea{
     outline: unset;
     border: unset;
     font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
 }
 textarea{
     width: calc(100% - 45px);
@@ -40,6 +41,7 @@ textarea{
 }
 input::placeholder, textarea::placeholder{
     color: rgb(201, 201, 201);
+    font-family: 'Montserrat', sans-serif;
 }
 
 .notification{
@@ -70,5 +72,17 @@ button{
     }
     .text{
         width: 60%;
+    }
+}
+@media (max-width:700px){
+    form, textarea, input{
+        width:90%;
+        display: block;
+    }
+    .text{
+        width: 90%;
+    }
+    .button, button{
+        width: 90%;
     }
 }

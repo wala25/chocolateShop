@@ -11,7 +11,7 @@
         <div class="photos">
             <div *ngFor="let p of photos;let i=index;" class="photo" [style]="{'background-image':'url(assets/'+p.url+')'}" (mouseenter)="disp(i)" (mouseleave)="disp(i)">
                
-                <div *ngIf="dip[i]" class="hover">
+                <div  class="hover" [ngClass]="{'hide':!dip[i]}">
                     <p>{{p.name}}</p>
                     <div class="SM">
                         <div *ngIf="p.insta">
