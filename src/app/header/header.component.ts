@@ -14,6 +14,7 @@ export class HeaderComponent implements OnInit {
     this.hide=!this.hide
   }
   ngOnInit(): void {
+    window.addEventListener('click',(e:any)=>{!document.getElementById('btn')?.contains(e.target)&&(this.hide=true)});
   }
 
 }

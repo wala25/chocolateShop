@@ -21,8 +21,10 @@ export class ContactUsComponent implements OnInit {
   notif='';
   loading=false
   submit(){
+    this.notif=''
     if(!this.contact.invalid&&!this.loading){
        this.loading=true;
+       this.notif='Wait a moment...'
        fetch("/api/postform", {
         method: "POST", 
         body: JSON.stringify(
@@ -32,17 +34,18 @@ export class ContactUsComponent implements OnInit {
             "Content-type": "application/json; charset=UTF-8"
         }
        })
-      .then(r => r.json())
-      .then(r=> {
-          this.loading=false
-          console.log('sent')
-          console.log(r.ok)
-       })
+      .then(r => {
+        this.loading=false
+        this.notif=r.ok?'Your message was successfully delivered.':'Unknown error!'
+        })
        .catch(e=>{
            this.loading=false
-           console.log('err')
+           this.notif='Unknown error!'
        })
 
+    }
+    else{
+      this.notif='Fill all the fields !'
     }
   }
   ngOnInit(): void {
