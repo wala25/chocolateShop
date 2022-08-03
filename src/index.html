@@ -2,12 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>ChocolateShop</title>
+  <title>My Chocolate Shop</title>
+  <meta name="description" content="My Chocolate Shop is a client-first chocolatier that specialises in creating premium, yet affordable chocolate products.">
+  <meta name="keywords" content="My Chocolate Shop, Chocolate Shop, Chocolate, premium chocolate">
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <app-root></app-root>
+
+
+  <app-root id="root" style="display: none;"></app-root>
+
+  <div class="loading" id="loading">
+        <div class="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+  </div>
+  
+  <script>
+   window.addEventListener('load',()=>{document.getElementById('loading').style.display="none";
+   document.getElementById('root').style.display="block"})  
+  </script>
+  
 </body>
 </html>

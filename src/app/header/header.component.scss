@@ -1,5 +1,10 @@
 @import'../../assets/styles/colors.scss';
-
+.header{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    z-index: 10000;
+}
 header{
     background: $secondery;
     height: 22px;
@@ -121,6 +126,7 @@ nav{
     .menuBtn{
         display: block;
         float: right;
+        top: 0px;
     }
     }
     .menu{
